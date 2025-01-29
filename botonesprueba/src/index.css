@@ -1,0 +1,10 @@
+/* Este es css(stilo) para toda la pagina */
+body {
+    font-family: system-ui;
+    margin: 0;
+    background: #737070;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+}

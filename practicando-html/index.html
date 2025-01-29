@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"> <!--Codificación-->
+    <meta name="viewport" content="width=device-width">
+    <title>Portafolio de HTML</title>
+    <!--Etiquetas de SEO-->
+    <meta name="description"
+        content="Portafolio de aprediendo html con un curso de midudev, para ser un experto Desarrollador Webbbbbb">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#8f7ada">
+    <!--OPEN GRAPH: es un conjunto de etiqueta que tiene como fin tener una buena presentacion al momento de compartir en la redes (casi como una vista previa del link compartido, FUE DESARROLLADO POR FACEBOOK)-->
+    <meta property="og:title" content="Portafolios kawai :I">
+    <meta property="og:description" content="Portafolios de calidad desarrollado para aprender html">
+    <meta property="og:image" content="/Images/img.jpg">
+    <meta property="og:image:alt" content="fotografia de photo-asus">
+
+    <!--etiqueta para rediregir a un link segun el idioma-->
+    <link rel="alternate" href="https://www.doritos.com.us/en" hreflang="en-GB">
+    <!--etiqueta para indicar cual es la pagina principal para evitar duplicados-->
+    <link rel="canonical" href="https://doritos.pe">
+
+    <link rel="icon" type="Images/jpg" href="/Images/img.jpg">
+
+    <style>
+        body {
+            background: #b8b9c7;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <h1>Portafolio de HTML</h1>
+
+        <iframe style="width: 100%; aspect-ratio: 16/9;" src="https://www.youtube.com/embed/3nYLTiY5skU?si=2YO7ymwWSIc8G5yV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <nav>
+            <!--Enlaces Internos-->
+            <a href="#experiencia">Experiencia</a>
+            <a href="#proyectos">Proyectos</a>
+
+            <!--Enlaces Externos-->
+            <a 
+                href="https://twitch.tv/midudev" 
+                target="_blank" 
+                rel="noreferrer">Twitch</a>
+            <!--👆
+                TARGET:indica que el url inicie en una nueva pestana, dejando intacta la pagina principal
+                REL:se utilizan por temas de seguridad, ya que no envia (información) la cabecera de referrer de la url origen, es decir evitar el envio de la url (como tokens, user, paswoord, versiones del navegador) *NOOPENER*-->
+        </nav>
+    </header>
+
+    <dialog id="dialog">
+        <h1>Sabias que podias abrir un modal así?</h1>
+        <p>¡Y es totalmente nativo!</p>
+        
+        <button id="hide">Cerrar Modal</button>
+    </dialog>
+
+    <button id="show">Ver mas información</button>
+<!--Esto ya incluye JavaScript-->
+<script>
+    window.show.addEventListener('click', () => {
+        window.dialog.showModal()
+    })
+
+    window.hide.addEventListener('click', () =>{
+        window.dialog.close()
+    })
+</script>
+    
+    <main>
+        <p>
+            +15 años de experiencia como <strong>Ingeniero de Software</strong>. De la Universidad Sideral Carrión, una
+            de las Universidades mas prestigiosa de Perú - <strong>Lima</strong>
+        </p>
+
+        <h2 id="experiencia">Experiencia</h2>
+        <!---->
+        <ul>
+            <li class="list-exp">Facebook - 2028</li>
+            <li class="list-exp">Google - 2031</li>
+            <li class="list-exp">Desarrollador full stack freelance - 2027</li>
+        </ul>
+        
+        <a download href="/Images/img.jpg"><!--DOWNLOAD HREF: para descargar una imagen haciendo click (esto solo funciona con recursos propios) | HREF mas la ruta de la imagen: abre vista previa de la imagen en una nueva pestaña-->
+            <img 
+            style="width: 100%; aspect-ratio: 16/9;"id="photo-asus" title="Asus 2021" alt="Una fotografia de Asus"
+                src="/Images/img.jpg">
+            <!-- HIDDEN atributo de tipo boleano que no necesita de ninguna otra comprobación, siempre sera true -->
+        </a>
+
+        <input type="file">
+
+        <h2 id="proyectos"> Proyectos Realizados </h2>
+
+        <aside>
+            <!---Contiene información relacionada pero separada del contenido principal, como barras laterales o notas-->
+            <header>
+                <h3> Mis Tecnologias Favoritas</h3>
+                <ol type="1" reversed start="10">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Node.js</li>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                </ol>
+                <ol type="1" >
+                    <li value="5">HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li value="20">Node.js</li>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                </ol>
+            </header>
+        </aside>
+        <button>
+            Haga Clickcito aqui
+        </button>
+        <section>
+            <article>
+                <header>
+                    <h4>Pagina de Tesla</h4>
+                    <img 
+                        style="width: 100%; aspect-ratio: 200/97;"
+                        loading="lazy"
+                        src="/Images/tesla.jpeg" 
+                        alt="Captura de pantalla de la pagina web de Tesla">
+                </header>
+                <p>
+                    Elon Musk me llamo rogando para que se lo haga esta pagina desde cero
+                </p>
+
+            </article>
+            <article>
+
+                <head>
+                    <h4>Sitios Web Corporativo</h4>
+                </head>
+                <p>
+                    Desarrollo de un sitio web corporativo con una interfaz amigable y moderna.
+                </p>
+                <footer>
+                    <small>
+                        Tecnologias utilizadas: HTML, CSS, JavaScript
+                    </small>
+                </footer>
+            </article>
+            <article>
+
+                <head>
+                    <h4>Sitios Web Corporativo</h4>
+                </head>
+                <p>
+                    Desarrollo de un sitio web corporativo con una interfaz amigable y moderna.
+                </p>
+                <footer>
+                    <small>
+                        Tecnologias utilizadas: HTML, CSS, JavaScript
+                    </small>
+                </footer>
+            </article>
+            <article>
+
+                <head>
+                    <h4>Sitios Web Corporativo</h4>
+                </head>
+                <p>
+                    Desarrollo de un sitio web corporativo con una interfaz amigable y moderna.
+                </p>
+                <footer>
+                    <small>
+                        Tecnologias utilizadas: HTML, CSS, JavaScript
+                    </small>
+                </footer>
+            </article>
+            <article>
+
+                <head>
+                    <h4>Sitios Web Corporativo</h4>
+                </head>
+                <p>
+                    Desarrollo de un sitio web corporativo con una interfaz amigable y moderna.
+                </p>
+                <footer>
+                    <small>
+                        Tecnologias utilizadas: HTML, CSS, JavaScript
+                    </small>
+                </footer>
+            </article>
+        </section>
+        <section>
+            <h2>Formulario de Contacto</h2>
+            <!--para salto de linea se uso DIV-->
+            <form method="post" action="/">
+                <fieldset> <!--FIELDSET para agrupar diferentes inputs-->
+                    <legend>información personal con DIV</legend>
+                    <label>
+                        Nombre
+                        <input type="text" name="name" placeholder="Aldito Bianquita">
+                    </label>
+                    <!--👆 forma corta para q al click en Nombre se ingrese al input-->
+                    <!--👇 forma extendida para q al hacer click en Nombre se ingrese al input-->
+                    <label for="name2">Nombre</label>
+                    <input type="text" id="name2" name="name" placeholder="Aldito Bianquita">
+                    <div>
+                        <label>E-mail
+                            <input type="text"  name="email" placeholder="pequeña@yahoo.com">
+                        </label> 
+                    </div>
+                </fieldset>
+            </form>
+            <!--para salto de linea se uso un STYLE 🙅‍♂️-->
+            <form method="post" action="/">
+                <fieldset> <!--FIELDSET para agrupar diferentes inputs-->
+                    <legend>información personal con STYLE</legend>
+                    <label style="display: block;">
+                        Nombre
+                        <input type="text" name="name" placeholder="Aldito Bianquita" required>
+                    </label>
+                    <label>
+                        E-mail
+                        <input type="email" name="email" placeholder="pequeña@yahoo.com" required>
+                    </label> 
+                </fieldset>
+                <fieldset>
+                    <legend>Informacion Adicional</legend>
+
+                    <label>
+                        telefono
+                        <input type="tel" name="tel"
+                        placeholder="928xxxxxx" required pattern="[0-9]{9}" title="Ingrese número telefonico">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Otros</legend>
+                        <div>
+                            <label for="why">Por qué quieres contactar con nosotros?</label>
+                            <select name="why" id="why">
+                                <option value="1">Trabajo</option>
+                                <option value="2">Duda</option>
+                                <option value="3">Más información</option>
+                            </select>
+                        </div>
+                    
+                        <div>
+                            <label for="terms">Aceptas los terminos y condiciones?
+                            </label>
+                            <input type="checkbox" id="terms" name="terms" required>
+                        </div>
+
+                        <div>
+                            <datalist id="languages">
+                                <option value="JavaScript"></option>
+                                <option value="Python"></option>
+                                <option value="Java"></option>
+                                <option value="C#"></option>
+                                <option value="PHP"></option>
+                            </datalist>
+                            <label>
+                                Con qué lenguaje quieres que te ayude?
+                                <input list="languages" name="languages">
+                            </label>
+                        </div>
+                </fieldset>
+                <!--Existen dos formas de colocar un button para validar un formulario
+                INPUT(del tipo submit) y BUTTON, este ultimo dentro de un formulario por defecto viene del tipo submit. Es recomendable usar button para tener una buena SEMANTICA-->
+
+                <!--<input type="submit" value="Enviar contacto">-->
+                <button>Enviar contacto</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+<footer>
+    Copyright © 2025 - El portfolio aprendiendo html
+    <a href="mailto:2022207028.est@unaj.edu.pe">Enviame un correo</a>
+    <a href="tel:+987654321">Llamar por telefono</a>
+    <a href="whatsapp://send?text=Hola Aldito">Solo para contactos</a>
+</footer>
+
+</html>
